@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary_NET_Framework_Develop_Systems_Test", "ClassLibrary_NET_Framework_Develop_Systems_Test\ClassLibrary_NET_Framework_Develop_Systems_Test.csproj", "{F21B4926-1CA0-453E-AF4B-441EAAE0798E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib", "ClassLibrary_NET_Framework_Develop_Systems_Test\lib.csproj", "{F21B4926-1CA0-453E-AF4B-441EAAE0798E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
