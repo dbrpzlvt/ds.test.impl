@@ -23,21 +23,19 @@ namespace ds.test.impl
 		public string PluginName { get => _pluginName; }
 		private string _version;
 		public string Version { get => _version; }
-
-		public Image Image { get => Image; }
+		private Image _image;
+		public Image Image { get => _image; }
 		private string _description;
 		public string Description { get => _description; }
 
 		public int Run(int input1, int input2)
 		{
-			return 0;
+			Console.WriteLine("Введите выражение: ");
+			string line = Console.ReadLine();
+			input1 = Convert.ToInt32(line.Split('+')[0]);
+			input2 = Convert.ToInt32(line.Split('+')[1]);
+
+			return Plugins.Add(input1, input2);
 		}
 	}
-	//class Add
-	//{
-	//	public static Add operator +(Add input1, Add input2)
-	//	{
-	//		return new Add { Property.Value = input1.Value + input2.Value };
-	//	}
-	//}
 }

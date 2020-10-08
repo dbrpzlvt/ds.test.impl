@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F21B4926-1CA0-453E-AF4B-441EAAE0798E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ClassLibrary_NET_Framework_Develop_Systems_Test</RootNamespace>
     <AssemblyName>ClassLibrary_NET_Framework_Develop_Systems_Test</AssemblyName>

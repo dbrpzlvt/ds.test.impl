@@ -9,6 +9,9 @@ namespace ds.test.impl
 {
 	public static class Plugins
 	{
+		//static int input1;
+		//static int input2;
+
 		public interface IPluginFactory
 		{
 			int PluginsCount { get; }
@@ -16,14 +19,24 @@ namespace ds.test.impl
 			IPlugin GetPlugin(string pluginName);
 		}
 
-		public static double Add(Plugins.IPluginFactory int input1, Plugins.IPluginFactory int input2)
+		public static int Add(int input1, int input2)
 		{
 			return input1 + input2;
 		}
+
+		public static int Sub(int input1, int input2)
+		{
+			return input1 - input2;
+		}
+
+		public static int Mlt(int input1, int input2)
+		{
+			return input1 * input2;
+		}
+
+		public static int Div(int input1, int input2)
+		{
+			return input1 / input2;
+		}
 	}
-
-
-	//	Console.WriteLine("Какой-то текст");
-	//	Console.ReadKey();
-	//}
 }
