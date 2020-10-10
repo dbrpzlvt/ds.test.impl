@@ -7,36 +7,22 @@ using System.Threading.Tasks;
 
 namespace ds.test.impl
 {
-	public static class Plugins
+	public interface IPluginFactory
 	{
-		//static int input1;
-		//static int input2;
+		int PluginsCount { get; }
+		string[] GetPluginNames { get; }
+		IPlugin GetPlugin(string pluginName);
+	}
 
-		public interface IPluginFactory
-		{
-			int PluginsCount { get; }
-			string[] GetPluginNames { get; }
-			IPlugin GetPlugin(string pluginName);
-		}
+	public static class Plugins /*: IPluginFactory*/ //C0714 Релизация интерфейсов статическими классами невозможна
+	{
+		//int IPluginFactory.PluginsCount => throw new NotImplementedException();
 
-		//public static int Add(int input1, int input2)
+		//string[] IPluginFactory.GetPluginNames => throw new NotImplementedException();
+
+		//IPlugin IPluginFactory.GetPlugin(string pluginName)
 		//{
-		//	return input1 + input2;
-		//}
-
-		//public static int Sub(int input1, int input2)
-		//{
-		//	return input1 - input2;
-		//}
-
-		//public static int Mlt(int input1, int input2)
-		//{
-		//	return input1 * input2;
-		//}
-
-		//public static int Div(int input1, int input2)
-		//{
-		//	return input1 / input2;
+		//	throw new NotImplementedException();
 		//}
 	}
 }
